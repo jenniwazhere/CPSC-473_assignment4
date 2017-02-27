@@ -8,10 +8,8 @@ var ESC_KEY = 27;
 
 function setDetails(imageUrl, titleText) {
     'use strict';
-
     var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
     detailImage.setAttribute('src', imageUrl);
-
     var detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
     detailTitle.textContent = titleText;
 }
@@ -69,7 +67,7 @@ function addKeyPressHandler() {
         if (event.keyCode === ESC_KEY) {
             hideDetails();
         }
-    });
+      });
 }
 
 function initializeEvents() {
