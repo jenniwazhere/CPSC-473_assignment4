@@ -5,6 +5,16 @@ var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
 var ESC_KEY = 27;
+var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+/*var 1_KEY = 49;
+var 2_KEY = 50;
+var 3_KEY = 51;
+var 4_KEY = 52;
+var 5_KEY = 53;
+var 6_KEY = 54;
+var 7_KEY = 55;
+var 8_KEY = 56;
+var 9_KEY = 57;*/
 
 function setDetails(imageUrl, titleText) {
     'use strict';
@@ -66,6 +76,33 @@ function addKeyPressHandler() {
         console.log(event.keyCode);
         if (event.keyCode === ESC_KEY) {
             hideDetails();
+        }
+        if (event.keyCode === 49) {
+          setDetailsFromThumb(thumbnails[0]);
+        }
+        if (event.keyCode === 50) {
+          setDetailsFromThumb(thumbnails[1]);
+        }
+        if (event.keyCode === 51) {
+          setDetailsFromThumb(thumbnails[2]);
+        }
+        if (event.keyCode === 52) {
+          setDetailsFromThumb(thumbnails[3]);
+        }
+        if (event.keyCode === 53) {
+          setDetailsFromThumb(thumbnails[4]);
+        }
+        if (event.keyCode === 54) {
+          setDetailsFromThumb(thumbnails[5]);
+        }
+        if (event.keyCode === 55) {
+          setDetailsFromThumb(thumbnails[6]);
+        }
+        if (event.keyCode === 56) {
+          setDetailsFromThumb(thumbnails[7]);
+        }
+        if (event.keyCode === 57) {
+          setDetailsFromThumb(thumbnails[8]);
         }
       });
 }
