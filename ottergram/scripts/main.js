@@ -6,15 +6,6 @@ var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
 var ESC_KEY = 27;
 var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
-/*var 1_KEY = 49;
-var 2_KEY = 50;
-var 3_KEY = 51;
-var 4_KEY = 52;
-var 5_KEY = 53;
-var 6_KEY = 54;
-var 7_KEY = 55;
-var 8_KEY = 56;
-var 9_KEY = 57;*/
 
 function setDetails(imageUrl, titleText) {
     'use strict';
